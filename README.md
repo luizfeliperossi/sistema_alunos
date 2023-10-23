@@ -30,8 +30,8 @@ CREATE TABLE endereco (
 
 O projeto Java possui os seguintes pacotes:
 
-- `modelo`: Contém as classes que representam os objetos do sistema (`Aluno` e `Endereco`).
-- `persistencia`: Inclui a classe de conexão com o banco de dados (`DatabaseConnection`).
+- `model`: Contém as classes que representam os objetos do sistema (`Aluno` e `Endereco`).
+- `persistence`: Inclui a classe de conexão com o banco de dados (`DatabaseConnection`).
 - `controller`: Engloba a classe `AlunoManager` que gerencia as operações de inserção, edição, remoção e listagem de alunos.
 
 ## Executando o Projeto
@@ -41,9 +41,9 @@ O projeto Java possui os seguintes pacotes:
 
 ```java
 // Exemplo de configuração para MySQL
-private static final String URL = "jdbc:mysql://localhost:3306/sistema_alunos";
-private static final String USER = "seu_usuario";
-private static final String PASSWORD = "sua_senha";
+String url = "jdbc:mysql://localhost:3306/sistema_aluno";
+String user = "usuario";
+String pass = "senha";
 ```
 
 3. Execute a classe `Main.java` para iniciar o sistema.
